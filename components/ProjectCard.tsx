@@ -26,7 +26,7 @@ function ProjectCard({project}: Props) {
         />
         <div className='flex space-x-2 mt-5'>
           {project?.technologies.map((technology, i) => (
-                <img key={i} className='h-10 w-10 mt-5 mb-5 object-cover rounded-full' src={urlFor(technology.image).url()} alt='technologies'/>
+                <img key={i} className='h-10 w-10 mt-5 mb-5 object-cover rounded-full' src={urlFor(technology?.image).url()} alt='technologies'/>
           ))}
         </div>
         <div className='ml-5 mr-5 mb-5 mt-2'>

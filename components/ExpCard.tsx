@@ -23,13 +23,13 @@ function ExpCard({experience}: Props) {
         alt="Company Image"
         />
         <div className='rounded-full'>
-            <h4 className='px-0 md:px-10 text-center xl:text-lg'>{experience.jobTitle}</h4>
-            <p className='font-bold text-2xl mt-1 text-center xl:text-2xl xl:py-5'>{experience.company}</p>
+            <h4 className='px-0 md:px-10 text-center xl:text-lg'>{experience?.jobTitle}</h4>
+            <p className='font-bold text-2xl mt-1 text-center xl:text-2xl xl:py-5'>{experience?.company}</p>
             <p className='uppercase py-5 sm:py-2 text-gray text-center xl:text-md xl:py-5'>
-                {new Date(experience.dateStarted).toDateString()} - {experience.isCurrentlyWorkingHere ? "Present" : new Date(experience.dateEnded).toDateString()}
+                {new Date(experience?.dateStarted).toDateString()} - {experience?.isCurrentlyWorkingHere ? "Present" : new Date(experience?.dateEnded).toDateString()}
             </p>
             <ul className='sm:flex-row space-y-4 sm:space-y-2 text-lg sm:text-sm xl:text-xl text-center xl:space-y-7'>
-                {experience.points.map((point, i) => (
+                {experience?.points.map((point, i) => (
                     <li key={i}>{point}</li>
                 ))}
             </ul>

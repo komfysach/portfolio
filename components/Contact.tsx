@@ -44,17 +44,17 @@ function Contact({pageInfo}: Props) {
             <div className='space-y-10 sm:space-y-2'>
                 <div className='flex items-center space-x-5 justify-center'>
                 <PhoneIcon className='text-[#c7fcff] h-7 w-7 animate-pulse'/>
-                <p className='font-vercetti tracking-wider'>{pageInfo.phoneNumber}</p>
+                <p className='font-vercetti tracking-wider'>{pageInfo?.phoneNumber}</p>
                 </div>
 
                 <div className='flex items-center space-x-5 justify-center'>
                 <EnvelopeIcon className='text-[#c7fcff] h-7 w-7 animate-pulse'/>
-                <p className='font-vercetti tracking-wider'>{pageInfo.email}</p>
+                <p className='font-vercetti tracking-wider'>{pageInfo?.email}</p>
                 </div>
 
                 <div className='flex items-center space-x-5 justify-center'>
                 <MapPinIcon className='text-[#c7fcff] h-7 w-7 animate-pulse'/>
-                <p className='font-vercetti tracking-wider'>{pageInfo.address}</p>
+                <p className='font-vercetti tracking-wider'>{pageInfo?.address}</p>
                 </div>
             </div>
 

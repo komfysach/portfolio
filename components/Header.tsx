@@ -28,8 +28,8 @@ function Header({socials}: Props) {
         }}
         className='flex flex-row items-center'>
             {/* Social Icons */}
-            {socials.map((social) => (
-                <SocialIcon key={social._id} url={social.url} fgColor='gray' bgColor='transparent' className='cursor-atom-pointer hover:scale-110'/>
+            {socials?.map((social) => (
+                <SocialIcon key={social?._id} url={social?.url} fgColor='gray' bgColor='transparent' className='cursor-atom-pointer hover:scale-110'/>
             ))}
         </motion.div>
         <Link href='#contact'>
