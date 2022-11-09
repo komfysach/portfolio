@@ -1,26 +1,50 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Vercetti";
+  src: url(../fonts/Vercetti-Regular.otf);
+  font-family: "Inconsolata";
+  src: url(../fonts/Inconsolata-Light.ttf);
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
+@layer components {
+  .heroButton {
+    @apply shadow-md cursor-atom-pointer px-6 py-2 border border-[#242424] rounded-full uppercase text-xs tracking-widest text-[#a5d1d4] transition-all hover:border-[#8cf9ff]/40 hover:text-[#8cf9ff]/40 bg-[rgb(1,15,36)]
   }
-  body {
-    color: white;
-    background: black;
+  .primaryButton {
+    @apply shadow-md cursor-atom-pointer px-6 py-2 border border-[#a5d1d4] rounded-full uppercase text-xs tracking-widest text-[rgb(1,15,36)] transition-all hover:border-[#8cf9ff]/40 hover:text-[rgb(1,15,36)]/40 bg-[#a5d1d4]
   }
+
+  .contactInput {
+    @apply font-vercetti outline-none bg-[#a5d1d4]/20 rounded-sm border-b px-6 py-4 border-[#a5d1d4]/40 text-[#a5d1d4]/40 placeholder:text-[#a5d1d4] transition-all focus:border-[#a5d1d4] focus:text-[#a5d1d4] hover:border-[#a5d1d4]/80
+  }
+
+  .parallax {
+    overflow: hidden;
+    letter-spacing: -2px;
+    line-height: 0.8;
+    margin: 0;
+    white-space: nowrap;
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  
+  .parallax .scroller {
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 100px;
+    display: flex;
+    white-space: nowrap;
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  
+  .parallax span {
+    display: block;
+    margin-right: 30px;
+  }
+  
+
 }
