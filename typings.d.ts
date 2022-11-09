@@ -59,15 +59,9 @@ export interface Project extends SanityBody {
   title: string;
   image: Image;
   linkToBuild: string;
-  category: Category[],
   linkToGithub: string;
   summary: string;
   technologies: Technology[];
-}
-
-export interface Category extends SanityBody {
-  _type: 'category';
-  title: string;
 }
 
 export interface Social extends SanityBody {
