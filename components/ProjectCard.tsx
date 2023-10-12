@@ -3,6 +3,7 @@ import {motion} from 'framer-motion'
 import { Project } from '../typings'
 import { urlFor } from '../sanity'
 import Link from 'next/link'
+import Image from 'next/image'
 
 type Props = {
   project: Project
