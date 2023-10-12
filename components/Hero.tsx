@@ -7,6 +7,7 @@ import Lottie from 'lottie-react'
 import animationData from '../lotties/yes-indeed.json'
 import { PageInfo } from '../typings'
 import { urlFor } from '../sanity'
+import { ArrowDownCircleIcon } from '@heroicons/react/24/solid'
 
 type Props = {
     pageInfo: PageInfo,
@@ -37,12 +38,17 @@ function Hero({pageInfo}: Props) {
         </div>
         {/* <h2 className='text-sm uppercase text-[#c7fcff] tracking-[15px]'>Full-Stack Dev</h2> */}
         {/* <h3 className='text-sm opacity-80 text-[#a5d1d4] tracking-[1px]'>Experienced designer and business developer, who loves to code</h3> */}
-        <h1 className='text-3xl lg:text-6xl font-semibold px-5'>
+        <h1 className='text-xl lg:text-6xl font-semibold px-5'>
         <span className='font-sans'>{text}</span>
         <Cursor cursorColor='#8cf9ff'/>
         </h1>
 
-        <div className='pt-5 z-20'>
+        <div className='text-[#8cf9ff] cursor-atom-pointer md:hidden animate-bounce flex flex-col items-center justify-center mt-5'>
+                <ArrowDownCircleIcon className='h-10 w-10 rounded-full mb-3'/>
+                <p className='text-center font-inconsolata'>Scroll</p>
+                {/* <p className='text-[rgb(1,15,36)] font-inconsolata text-center'>Top</p> */}
+        </div>
+        <div className='hidden pt-5 z-20'>
             <Link href="#about">
             <button className='heroButton'>About</button>
             </Link>

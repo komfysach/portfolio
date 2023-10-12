@@ -26,42 +26,44 @@ function Contact({pageInfo}: Props) {
 
   return (
     <div className='h-screen flex relative flex-col text-center px-10 justify-center items-center'>
-        <div className='absolute top-4 mt-28 sm:mt-12 object-contain h-7 w-96'>
+        <div className='object-contain sm:h-7 sm:w-96 w-64'>
             <Lottie 
             className='cursor-atom-pointer' 
             animationData={animationData}
             loop={true}
             />
         </div>
-        <div className='flex flex-col mt-28 space-y-10 sm:space-y-5'>
-            <h4 className='text-2xl font-vercetti text-center'>
+        <div className='flex flex-col sm:mt-7 mt-20 space-y-5'>
+            <div className='mt-16'>
+            <h4 className='hidden sm:text-2xl underline text-xl font-vercetti text-center'>
                 Like what you see
             </h4>
-            <div className="hidden sm:flex h-56 ml-7 w-96">
+            </div>
+            <div className="hidden sm:flex w-96">
                 <Eyes/>
             </div>
-                <span className='underline text-2xl decoration-[#c7fcff]/50'>Get in touch.</span>
-            <div className='space-y-10 sm:space-y-2'>
-                <div className='flex items-center space-x-5 justify-center'>
+                {/* <span className='underline text-2xl decoration-[#c7fcff]/50'>Get in touch.</span> */}
+            <div className='space-y-5'>
+                <div className='flex items-center sm:space-x-5 space-x-2 justify-center'>
                 <PhoneIcon className='text-[#c7fcff] h-7 w-7 animate-pulse'/>
                 <p className='font-vercetti tracking-wider'>{pageInfo?.phoneNumber}</p>
                 </div>
 
-                <div className='flex items-center space-x-5 justify-center'>
+                <div className='flex items-center sm:space-x-5 space-x-2 justify-center'>
                 <EnvelopeIcon className='text-[#c7fcff] h-7 w-7 animate-pulse'/>
                 <p className='font-vercetti tracking-wider'>{pageInfo?.email}</p>
                 </div>
 
-                <div className='flex items-center space-x-5 justify-center'>
+                <div className='flex items-center sm:space-x-5 space-x-2 justify-center'>
                 <MapPinIcon className='text-[#c7fcff] h-7 w-7 animate-pulse'/>
                 <p className='font-vercetti tracking-wider'>{pageInfo?.address}</p>
                 </div>
             </div>
 
-            <form onSubmit={handleSubmit(onSubmit)} className='flex flex-col space-y-2 w-fit mx-auto'>
-                <div className='flex space-x-2'>
-                    <input {...register('name')} placeholder='Name' className='contactInput' type='text'/>
-                    <input {...register('email')} placeholder='Email' className='contactInput' type='email'/>
+            {/* <form onSubmit={handleSubmit(onSubmit)} className='flex flex-col space-y-2 w-fit sm:mx-auto sm:max-w-7xl max-w-4xl'>
+                <div className='sm:flex sm:flex-row flex-col items-center justify-center space-y-2 sm:space-y-0 sm:space-x-2'>
+                    <input {...register('name')} placeholder='Name' className='contactInput w-72' type='text'/>
+                    <input {...register('email')} placeholder='Email' className='contactInput w-72' type='email'/>
                 </div>
 
                 <input {...register('subject')} placeholder='Subject' className='contactInput' type='text'/>
@@ -69,7 +71,7 @@ function Contact({pageInfo}: Props) {
                 <textarea {...register('message')} placeholder='Message' className='contactInput'/>
                 <button className='primaryButton'>Submit</button>
 
-            </form>
+            </form> */}
         </div>
     </div>
   )
