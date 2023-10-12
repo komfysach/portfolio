@@ -1,6 +1,5 @@
 import {Project} from '../typings'
 
-export const revalidate = 1;
 export const fetchProjects = async () => {
     const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/getProjects`)
 
