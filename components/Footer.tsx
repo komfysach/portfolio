@@ -32,13 +32,7 @@ const Footer = (props: Props) => {
                 {/* <p className='text-[rgb(1,15,36)] font-inconsolata text-center'>Top</p> */}
             </div>
             </Link>
-            {/* <div className='flex flex-col'>
-            <Link href='https://getkomfy.net' passHref>
-              <a className='flex flex-col px-20' target='_blank' rel='noopener noreferrer'>
-            <button className='heroButton mt-5'>My Other Website</button>
-            </a>
-            </Link>
-            </div> */}
+           
         </div>
     </div>
   )
