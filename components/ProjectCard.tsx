@@ -32,12 +32,12 @@ function ProjectCard({project}: Props) {
         <div className='ml-5 mr-5 mb-5 mt-2'>
             <p className='font-vercetti text-lg sm:text-2xl'>{project?.title}</p>
             <p className='sm:text-sm text-xs mt-2 mb-2 font-inconsolata'>{project?.summary}</p>
-              <Link href={project?.linkToGithub} passHref>
+              <Link href={`${project?.linkToGithub ? project?.linkToGithub : ''}`} passHref>
                 <a target='_blank'>
                 <button className='heroButton m-3'>Github</button>
                 </a>
                </Link>
-               <Link href={project?.linkToBuild} passHref>
+               <Link href={`${project?.linkToBuild ? project?.linkToBuild : ''}`} passHref>
                 <a target='_blank'>
                <button className='primaryButton m-3'>Demo</button>
                </a>
