@@ -46,14 +46,13 @@ function About({}: Props) {
               background
             </h4>
             <p className="md:text-sm text-xs font-inconsolata">
-              I am a Capetonian🌞 now living in Eindhoven💡 Experienced
-              Developer with a passion for coding and tech👨🏾‍💻 I have been pushing
-              code for both small and large companies across the globe for the
-              past 8 years. Along this journey I realised my love for coding. My
-              coding adventure has taken me through the foundations of HTML🖐🏾
-              CSS🎨 and JavaScript with the ReactJS⚛️ framework for front-end,
-              to full-stack builds with Node🟩, Python🐍 and Golang🐹 Being a
-              life long learner, I enjoy exploring new tech and keeping
+              I am a Capetonian🌞 now living in Eindhoven💡Experienced Developer
+              with a passion for coding and tech👨🏾‍💻 I have been pushing code for
+              both small and large companies across the globe for the past 8
+              years. My coding adventure has taken me through the foundations of
+              HTML🖐🏾 CSS🎨 and JavaScript with the ReactJS⚛️ framework for
+              front-end, to full-stack builds with Node🟩, Python🐍 and Golang🐹
+              Being a life long learner, I enjoy exploring new tech and keeping
               up-to-date with innovations in the industry.
             </p>
           </div>
@@ -68,13 +67,11 @@ function About({}: Props) {
               Ik kom uit Kaapstad🌞 en nu woon ik in Eindhoven💡 Ik ben een
               ervaren ontwikkelaar met een passie voor coderen en tech👨🏾‍💻 Ik heb
               de afgelopen 8 jaar voor zowel kleine als grote bedrijven gewerkt.
-              Door mijn ervaringen de afgelopen jaren en de projecten waaraan ik
-              heb gewerkt, ontdekte ik mijn passie voor coderen. Dit heeft mij
-              door de basis geleid van HTML🖐🏾 CSS🎨 en JavaScript met ReactJS⚛️
-              framework voor front-end tot full-stack builds met Node🟩,
-              Python🐍 en Golang🐹 Ik ben een levenslange leerling, waardoor ik
-              graag nieuwe tech ontdek en op de hoogte blijf van innovaties in
-              de branche.
+              Dit heeft mij door de basis geleid van HTML🖐🏾 CSS🎨 en JavaScript
+              met ReactJS⚛️ framework voor front-end tot full-stack builds met
+              Node🟩, Python🐍 en Golang🐹 Ik ben een levenslange leerling,
+              waardoor ik graag nieuwe tech ontdek en op de hoogte blijf van
+              innovaties in de branche.
             </p>
           </div>
         )}
