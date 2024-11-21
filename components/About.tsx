@@ -47,13 +47,12 @@ function About({}: Props) {
             </h4>
             <p className="md:text-sm text-xs font-inconsolata">
               I am a Capetonian🌞 now living in Eindhoven💡Experienced Developer
-              with a passion for coding and tech👨🏾‍💻 I have been pushing code for
-              both small and large companies across the globe for the past 8
-              years. My coding adventure has taken me through the foundations of
-              HTML🖐🏾 CSS🎨 and TypeScript with the ReactJS⚛️ as well as React
-              Native, to full-stack builds with Node🟩, Python🐍, Golang🐹 and
-              PHP Laravel Being a life long learner, I enjoy exploring new tech
-              and keeping up-to-date with innovations in the industry.
+              with a passion for coding and tech👨🏾‍💻 My coding adventure has taken
+              me through the foundations of HTML🖐🏾 CSS🎨 and TypeScript with the
+              ReactJS⚛️ as well as React Native, to full-stack builds with
+              Node🟩, Python🐍, Golang🐹 and PHP Laravel Being a life long
+              learner, I enjoy exploring new tech and keeping up-to-date with
+              innovations in the industry.
             </p>
           </div>
         ) : (
@@ -65,10 +64,9 @@ function About({}: Props) {
             </h4>
             <p className="md:text-sm text-xs font-inconsolata">
               Ik kom uit Kaapstad🌞 en nu woon ik in Eindhoven💡 Ik ben een
-              ervaren ontwikkelaar met een passie voor coderen en tech👨🏾‍💻 Ik heb
-              de afgelopen 8 jaar voor zowel kleine als grote bedrijven gewerkt.
-              Dit heeft mij door de basis geleid van HTML🖐🏾 CSS🎨 en TypeScript
-              met ReactJS⚛️ en React Native tot full-stack builds met Node🟩,
+              ervaren ontwikkelaar met een passie voor coderen en tech👨🏾‍💻 Dit
+              heeft mij door de basis geleid van HTML🖐🏾 CSS🎨 en TypeScript met
+              ReactJS⚛️ en React Native tot full-stack builds met Node🟩,
               Python🐍, Golang🐹 en PHP Laravel. Ik ben een levenslange
               leerling, waardoor ik graag nieuwe tech ontdek en op de hoogte
               blijf van innovaties in de branche.
