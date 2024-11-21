@@ -50,7 +50,7 @@ function About({}: Props) {
               with a passion for coding and tech👨🏾‍💻 My coding adventure has taken
               me through the foundations of HTML🖐🏾 CSS🎨 and TypeScript with the
               ReactJS⚛️ as well as React Native, to full-stack builds with
-              Node🟩, Python🐍, Golang🐹 and PHP Laravel Being a life long
+              Node🟩, Python🐍, Golang🐹 and PHP Laravel. Being a life long
               learner, I enjoy exploring new tech and keeping up-to-date with
               innovations in the industry.
             </p>
